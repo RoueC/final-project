@@ -1,0 +1,79 @@
+
+body {
+    margin: auto;
+}
+
+.header {
+
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.navigation li{
+    float: left;
+    display: block; 
+    text-align: center;
+    padding: 14px 16px;    
+}
+
+.navigation a {
+    text-decoration: none;  
+    color: sandybrown;
+}
+
+
+.fa {
+    color: sandybrown;
+    border: auto;
+    border-color: sandybrown;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+/*
+.banner-image {
+    position: relative;
+
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+    
+} 
+
+.about-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.about-container .about-photo{
+
+    width: 100%;    
+}
+
+.about-container .about-photo{
+
+   width: 50%;
+    
+}
+    
+
+.services-container {
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "our-services our-services our-services our-services our-services our-services"
+    "digital digital digital marketing marketing marketing"
+    "video video web web print print";
+} */
