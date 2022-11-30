@@ -5,35 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--CSS  Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+
     <!--Icon Stylesheet-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Custom  Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
+
     <title>Final Project</title>
 </head>
    
 <body>
-<div class="container">  <!--used this div to hold styling elements of the body -->
+    
+    <div class="container"> <!--This div holds styling elements -width, margin, etc- for the Header and Banner. 
+        This can be re-used to replace other container classes if styling is indentical --> 
     
     <!--Header -->    
-    <div class="container2"> <!--used this div to hold styling elements for header and banner -->
         <div class="header">
              <nav>  
-                <ul class="navigation">  <!--used list items for navigation. Each item has an anchor tag that links to an id, enabling navigation to jump to the id element-->
+                <ul class="navigation">  <!--used list items for navigation. 
+                    Each item has an anchor tag that links to an id, enabling navigation to jump to the id element-->
                     <li> <img src="images/logo.png" alt="Three Star Logo"> </li>
                     <li><a href="#banner">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>    
-                    <li><input type="text" placeholder="Search"> <i class="fa fa-search"></i>
+                    <li><input type="text" placeholder="Search"><i class="fa fa-search"></i>
                 </ul>   
             </nav>
-        </div>
+        </div> 
 
-    <!--Banner - used external and internal div to style banner -->  
-    <!--Different banner classes are used to adjust positions of elements along with hero image. Id attribute is used to jump to banner-->
+    <!--Banner - used external div to add bleed effect and internal div for the rest of the styling -->  
+    <!--Different banner classes are used to adjust absolute/relative positions of elements along with hero image. 
+        Id attribute is used to jump to banner when Home is clicked from top navigation-->
         <div class="banner-container" id="banner">  
             
             <div class="banner-text">   
@@ -45,17 +57,21 @@
                 <img src="images/main-banner.jpg" alt="Office Workstation">    
             </div>
 
-            <button class="connect">Connect with us <i class="fa fa-caret-right"></i></button>
+            <a href="#contact"> <!--used anchor tag to jump to Contact Us>-->
+                <button class="connect">Connect with us <i class="fa fa-caret-right"></i></button>
+            </a>
                 
         </div>
-    </div>    
+    </div>
+
     
    <main>
     
-    <div class="container3">  <!--This div holds styling elements from about us until contact us -->   
+    <div class="container2">  <!--This div holds styling elements -width, margin, etc- for the Main section. 
+        This can be re-used to replace other container classes if styling is indentical -->   
 
-     <!--About Us - used external and internal div to style about us-->    
-     <!--Different about classes are used to identify flex items. Id attribute is used to jump to About Us from navigation.-->   
+     <!--About Us - used external div to add bleed effect and internal div for the rest of the styling-->    
+     <!--Different about classes are used to identify flex items. Id attribute is used to jump to About Us from top navigation.-->   
             <div class="about-container" id="about-us"> 
                 
                 <div class="about-photo">
@@ -70,7 +86,7 @@
             </div>    
 
     <!--Our Services - used external and internal div to style Our Services-->   
-    <!--Different classes are used to identify grid items. Id attribute is used to jump to Our Services from navigation.-->     
+    <!--Different classes are used to identify grid items. Id attribute is used to jump to Our Services from top navigation.-->     
             <div class="services-container" id="services">
     
                 <div class="our-services">    
@@ -116,8 +132,7 @@
     
     
     <!--Vision -  used external and internal div to style Vision --> 
-    <!--Id attribute is used to jump to vision from navigation.-->
-            <div class="vision-container" id="vision"> 
+            <div class="vision-container"> 
               
                 <div class="vision">
                     <h3>Our Vision</h3>
@@ -129,7 +144,7 @@
             </div>
     
     <!--Our Team - used external and internal div to style Our Team -->   
-    <!--Different classes are used to identify flex items. Id attribute is used to jump to Our Team from navigation.-->
+    <!--Different classes are used to identify flex items. Id attribute is used to jump to Our Team from top navigation.-->
             <div class="team-container" id="team"> 
                 
                 <div class="our-team"> 
@@ -159,7 +174,7 @@
             </div>
 
     <!--Contact Us - used external and internal div to style Contact Us-->
-    <!--Different classes are used to identify flex or grid items. Id attribute is used to jump to Contact Us from navigation.-->
+    <!--Different classes are used to identify flex or grid items. Id attribute is used to jump to Contact Us from top navigation.-->
             
             <div class="contact-container" id="contact"> 
                 
@@ -171,16 +186,16 @@
                     <h3>Send us a Message</h3>
                         
                     <form action="Thanks.html" method="POST"><br> <!--used form element to create a form for user input-->
-                        <label for="full-name">Full Name:</label><br><br> 
-                        <input type="text" id="full-name" name="full-name" style="width:550px;"><br><br>
+                        <label for="full-name">Full Name:</label> 
+                        <input type="text" id="full-name" name="full-name;">
         
-                        <label for="email">Email:</label><br><br> 
-                        <input type="email" id="email" name="email" style="width:550px;"><br><br>
+                        <label for="email">Email:</label> 
+                        <input type="email" id="email" name="email;">
         
                         <p><label for="message">Message:</label></p>
-                        <textarea id="message" name="message" rows="10" cols="70"></textarea> <br><br>
+                        <textarea id="message" name="message"></textarea> 
 
-                        <input type="button" onclick="alert('Thank You')" value="Send" style="height:35px">
+                        <input type="button" onclick="alert('Thank You')" value="Send">
                     </form>
 
                 </div>
@@ -220,8 +235,7 @@
             <p>All images are taken from <a href=https://unsplash.com>Unsplash</a></p> <!--used anchor tag to reference unsplash website-->
         </footer> 
 
-        
-</div>
+
 </body>
 </html>
 
