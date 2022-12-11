@@ -1,7 +1,711 @@
 /*font-family: 'Open Sans', sans-serif;*/
+/*Colours values #c78c06, #ffe6ac, #222 and white*/
 
 
-body {
+.container {
+    display:block;
+    margin: auto;
+    max-width: 1200px;
+    font-family:'Open Sans', sans-serif;
+   
+    
+}
+
+
+
+li a{
+    display: block;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none; 
+    font-family:'Open Sans', sans-serif;
+    color: #c78c06;
+       
+}
+
+ul  {
+    background-color: black; 
+
+}
+
+.logo {
+    display: block;
+    background-color:#c78c06; 
+   
+}
+
+
+ul .search { 
+    display: block;
+    margin: auto;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    border-bottom: 15px;
+
+}
+.search_button {
+   border-color: #c78c06;
+
+}
+
+
+/*styling for icons*/
+.fa-search { 
+    color: sandybrown;
+  
+  
+}
+
+.fa-caret-right {
+
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+
+/* Bnnner */
+
+.banner-container {
+
+    width: 100%;
+    height: 600px;
+    margin:auto;
+    font-family:'Open Sans', sans-serif;
+    background-image: url("../images/main-banner.jpg");
+    background-color:black;
+    background-position: 100% 100%;
+    background-size: cover; 
+}
+
+
+h1 {
+
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 15px;
+    
+
+}
+
+
+.banner-text p {
+    font-size: 12px;
+    color: white;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.button-4 {
+    background-color: #c78c06;
+    border: none; 
+    color: black;
+    padding: 15px 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+   
+
+}
+
+.banner-text {
+
+    background-color: rgb(0,0,0,.6);
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -40%);
+
+}
+
+
+
+
+
+
+/*About-us */
+
+.about-container {
+    margin: auto;
+    background-color: #ffe6ac;
+   
+}
+
+.about-photo {
+   width: 100%;
+   padding: 15px;
+  
+   
+}
+
+.about-us{
+    padding: 15px;
+}
+
+h2 {
+    font-family:'Open Sans', sans-serif;
+    font-size: 38px;
+    font-weight:bold;
+    padding-bottom: 10px;
+ 
+}
+
+h4 {
+    font-family:'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight:bold;
+    padding-bottom: 10px;
+
+
+}
+
+.about-us p {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    line-height: 1.5;
+ 
+}
+
+
+/*Services */
+.service-container {
+   width: 100%;
+   margin: auto;
+   
+}
+
+.our-services h2 {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+/*Services - Digital */
+.digital  {
+
+    justify-content: center;
+    margin: 15px 15px;
+    background-color: #ffe6ac;
+
+}
+
+.digital-image {
+
+    width: 100%;
+}
+
+.digital p {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+
+}
+
+.digital h4 {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.button { /* button style for services */
+
+    font-family:'Open Sans', sans-serif;
+    background-color: black; 
+    border: none; 
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    
+
+}
+
+/*Services - Marketing */
+.marketing  {
+
+    justify-content: center;
+    margin: 15px 15px;
+    background-color: #ffe6ac;
+
+}
+
+.marketing-image {
+
+    width: 100%;
+}
+
+.marketing p {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+
+}
+
+.marketing h4 {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+
+/*Services - Video */
+.video  {
+
+    justify-content: center;
+    margin: 15px 15px;
+    background-color: #ffe6ac;
+
+}
+
+.video-image {
+
+    width: 100%;
+}
+
+.video p {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+
+}
+
+.video h4 {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+
+/*Services - Web */
+
+.web  {
+
+    justify-content: center;
+    margin: 15px 15px;
+    background-color: #ffe6ac;
+
+}
+
+.web-image {
+
+    width: 100%;
+}
+
+.web p {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+
+}
+
+.web h4 {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+/*Services - Print */
+
+
+.print  {
+
+    justify-content: center;
+    margin: 15px 15px;
+    background-color: #ffe6ac;
+
+}
+
+.print-image {
+
+    width: 100%;
+}
+
+.print p {
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+
+}
+
+.print h4 {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+
+/*Vision*/
+
+.vision-container {
+
+    width: 100%;
+    height: 300px;
+    margin:auto;
+    font-family:'Open Sans', sans-serif;
+    background-image: url("../images/vision.jpg");
+    background-color:white;
+    background-position: 100% 50%;
+    background-size: cover; 
+}
+
+
+.button-3 { 
+
+    font-family:'Open Sans', sans-serif;
+    background-color: black; 
+    border-color:  #c78c06; 
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    
+
+}
+
+.vision h3 {
+
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom:20px;
+
+}
+
+.vision p {
+
+    color:white;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
+}
+
+
+/*Our Team */
+.team-container {
+    width: 100%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.our-team h2 {
+  
+    padding: 15px;
+}
+
+/*Our Team - John */
+.john {
+    background-color: #ffe6ac;
+    justify-content: center;
+    margin: 15px 15px;
+  
+}
+
+.john-image {
+    width: 100%;    
+}
+
+.john-text p {
+    
+    font-size:12px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 15px 15px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.john-text h3 {
+    padding-left: 10px;
+    background-color: #ffe6ac;
+    justify-content: center;
+    margin: 15px 15px; 
+    font-size: 28px;
+    font-weight:bold;
+}
+
+.john-text h5 {
+    padding-left: 10px;
+    background-color: #ffe6ac;
+    justify-content: center;
+    margin: 15px 15px;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.line {
+    border: .5px solid rgb(165, 13, 13);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+
+/*Our Team - Bob */
+.bob {
+    background-color: #ffe6ac;
+    justify-content: center;
+    margin: 15px 15px;
+  
+}
+
+.bob-image {
+    width: 100%;    
+}
+
+.bob-text p {
+    font-size:12px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin: 15px 15px;
+    line-height: 1.5;
+}
+
+.bob-text h3 {
+    padding-left: 10px;
+    background-color: #ffe6ac;
+    justify-content: center;  
+    margin: 15px 15px;
+    font-size: 28px;
+    font-weight:bold;
+}
+
+.bob-text h5 {
+    padding-left: 10px;
+    background-color: #ffe6ac;
+    justify-content: center;   
+    margin: 15px 15px;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+
+
+
+/*Contact Us */
+
+.contact-container {
+    width: 100%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-us h2 {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+}
+
+
+/*Contact Us - Send us a message*/
+
+.message h3 {
+    padding-left:15px;
+    padding-top: 0px;
+    padding-bottom: 20px; 
+    font-size: 25px;
+    font-weight:bold;
+    
+}
+
+.label {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.message input[type=text], [type=email] {
+    width: 95%;
+    margin-left:15px;
+    margin-bottom: 10px;
+}
+
+.message textarea[name=message] {
+
+    margin-left:15px;
+    margin-bottom: 10px;
+    width: 95%;
+    height:150px;
+}
+
+.button-2 {
+
+    background-color: black; 
+    border: none;
+    color:#c78c06;
+    padding: 5px 10px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+   
+}
+
+/*Contact Us - HOO */
+
+.hoo {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hoo h3 {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px; 
+    font-size: 25px;
+    font-weight:bold;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 15px;
+  }
+
+table {
+    width: 95%;
+    font-size: 12px;
+}
+    
+th {
+
+    background-color: #ffe6ac;
+}
+
+/*Contact Us - Location */
+
+.location h3 {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px; 
+    font-size: 25px;
+    font-weight:bold;
+
+}
+
+iframe {
+    width: 95%;
+    padding-left: 15px;
+   
+}
+
+/*Footer*/
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color:#c78c06;
+    line-height: 2;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+
+
+@media screen and (min-width:760px) {
+
+
+    .container {
+        display:block;
+        max-width: 1200px;
+        font-family:'Open Sans', sans-serif;     
+    }
+
+    nav {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+   
+   
+
+    
+    ul li{
+        
+        display: block; 
+        float: left;
+        text-align: center;
+        padding: 14px 16px;    
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+/*
+
+.banner-container {
+    height: 100%;
+    margin: 0;
+}
+
+.banner-image {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    bottom: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+*/
+
+
+
+
+
+
+
+/*body {
     margin: auto;
 }
 
@@ -45,7 +749,7 @@ textarea[name=message] {
     height:200%;
 }
 
-/*
+
 
 .banner-image {
     position: relative;
