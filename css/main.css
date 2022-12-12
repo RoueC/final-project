@@ -11,9 +11,8 @@
     
 }
 
-
-
 li a{
+  
     display: block;
     padding: 20px 50px;
     text-align: center;
@@ -23,39 +22,53 @@ li a{
        
 }
 
-ul  {
+ ul {
+    
+ }
+
+nav {
     background-color: black; 
 
 }
 
-.logo {
-    display: block;
+a:hover {
+    color:white;
+  }
+
+.home:hover {
+    color:white;
+  }
+
+.logo   {
     background-color:#c78c06; 
-   
+    padding-top: 15px;
+    padding-bottom: 20px;  
+}
+
+nav .home {
+    background-color:#c78c06; 
+    color:black;
 }
 
 
-ul .search { 
-    display: block;
-    margin: auto;
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    border-bottom: 15px;
-
+form input[type=text] {
+    width: 85%;
+    padding: 6px;
+    margin-left:15px;
 }
-.search_button {
-   border-color: #c78c06;
 
+form button {
+    padding: 6px;
+    color: sandybrown;
+    border-color: #c78c06;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 5px;
 }
 
 
 /*styling for icons*/
-.fa-search { 
-    color: sandybrown;
-  
-  
-}
 
 .fa-caret-right {
 
@@ -65,20 +78,18 @@ ul .search {
 }
 
 
-/* Bnnner */
+/* Banner */
 
 .banner-container {
 
-    width: 100%;
     height: 600px;
-    margin:auto;
     font-family:'Open Sans', sans-serif;
     background-image: url("../images/main-banner.jpg");
     background-color:black;
-    background-position: 100% 100%;
-    background-size: cover; 
+    background-size: cover;
+    background-position: 50% 50%;
+    
 }
-
 
 h1 {
 
@@ -88,9 +99,7 @@ h1 {
     padding-top: 50px;
     padding-left: 15px;
     
-
 }
-
 
 .banner-text p {
     font-size: 12px;
@@ -114,38 +123,29 @@ h1 {
 }
 
 .banner-text {
-
     background-color: rgb(0,0,0,.6);
     text-align: left;
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translate(0%, -40%);
 
 }
-
-
-
-
 
 
 /*About-us */
 
 .about-container {
     margin: auto;
+    padding:15px;
     background-color: #ffe6ac;
    
 }
 
 .about-photo {
-   width: 100%;
-   padding: 15px;
-  
-   
+    width: 100%;
+    padding-bottom:20px;
 }
 
-.about-us{
-    padding: 15px;
-}
 
 h2 {
     font-family:'Open Sans', sans-serif;
@@ -368,16 +368,16 @@ h4 {
 }
 
 
-.button-3 { 
+.vision a { 
 
     font-family:'Open Sans', sans-serif;
+    color: white;
     background-color: black; 
     border-color:  #c78c06; 
-    color: white;
     padding: 15px 25px;
     margin: 10px;
     text-align: center;
-    text-decoration: none;
+     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     
@@ -410,30 +410,31 @@ h4 {
 /*Our Team */
 .team-container {
     width: 100%;
-    margin: auto;
+    padding: 15px 15px;
     font-family: 'Open Sans', sans-serif;
     
 }
 
 .our-team h2 {
-  
-    padding: 15px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
 }
 
 /*Our Team - John */
 .john {
     background-color: #ffe6ac;
     justify-content: center;
-    margin: 15px 15px;
+ 
   
 }
 
 .john-image {
-    width: 100%;    
+    width: 100%; 
+       
 }
 
-.john-text p {
-    
+.john-text p {  
     font-size:12px;
     padding-left: 10px;
     padding-bottom: 10px;
@@ -446,7 +447,7 @@ h4 {
     padding-left: 10px;
     background-color: #ffe6ac;
     justify-content: center;
-    margin: 15px 15px; 
+    margin: 15px 15px;
     font-size: 28px;
     font-weight:bold;
 }
@@ -461,7 +462,7 @@ h4 {
 }
 
 .line {
-    border: .5px solid rgb(165, 13, 13);
+    border: 1px solid #c78c06;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -472,7 +473,7 @@ h4 {
 .bob {
     background-color: #ffe6ac;
     justify-content: center;
-    margin: 15px 15px;
+   
   
 }
 
@@ -634,37 +635,378 @@ footer {
 
 
 
+/******* DESKTOP **********/
+
 @media screen and (min-width:760px) {
 
 
     .container {
         display:block;
         max-width: 1200px;
-        font-family:'Open Sans', sans-serif;     
+        font-family:'Open Sans', sans-serif;  
+        
     }
 
-    nav {
+    body {
         width: 100%;
-        overflow: hidden;
-
+       
     }
 
-   
-   
+    nav { 
+        background-color: black;
+        overflow: hidden;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding: 10px 10px;
 
+
+    }
     
     ul li{
-        
+         
         display: block; 
-        float: left;
-        text-align: center;
-        padding: 14px 16px;    
+        float:left;
+      
+    }
+
+    .logo{
+        background-color: black;
+        margin-left: 15px;;
     }
 
 
 
 
+
+    /*Banner*/
+
+    .banner-container {
+
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-image: url("../images/main-banner.jpg");
+        background-color:black;
+        background-position: 100% 100%;
+        background-size: cover; 
+    }
+
+
+    .banner-text {
+
+        background-color: rgb(0,0,0,.6);
+        text-align: left;
+        position: absolute;
+        top: 40%;
+        transform: translate(0%, -40%);
+    
+    }
+
+
+
+    /* About Us */
+
+    .about-container {
+
+        margin:auto;
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .about-container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+       
+    .about-container .about-photo {
+       width: 100%;
+        
+    }
+
+    .about-us {
+
+        padding-left: 10px;
+    }
+
+
+    .services-container {
+
+        padding-left: 60px;
+        padding-right: 60px;
+        display: grid;
+        grid-template-columns:6;
+        grid-template-rows:3;
+        grid-template-areas:
+          "our-services our-services our-services our-services our-services our-services"
+          "digital digital digital marketing marketing marketing"
+          "video video web web print print";
+      }
+      
+              .our-services {
+                  grid-area: our-services;
+              }
+              .digital {
+                  grid-area: digital;
+              }
+              .marketing {
+                  grid-area: marketing;
+              }
+              .video {
+                  grid-area: video;
+              }
+              .web {
+                  grid-area: web;
+              }
+              .print {
+                  grid-area: print;
+              }
+
+
+    /* Vision */
+
+
+    .vision-container {
+
+        height: 270px;       
+    }
+
+    
+    .vision h3 {
+        padding-left: 80px;
+    }
+
+    .vision p {
+        padding-left: 80px;
+        padding-bottom: 20px;
+
+    }
+
+    .button-3 { 
+        padding-left: 25px;
+        margin-left: 80px;
+    }
+
+
+
+     /* Our Team */         
+
+    .team-container {
+        padding-left: 80px;
+    
+
+    }
+
+    .our-team {
+        padding-left: 15x;
+    }
+
+
+    .john {
+        display:flex;
+          
+    }   
+        
+    .john .john-text {
+
+        width: 100%;   
+
+    }
+
+    .bob {
+        display:flex;
+        flex-direction: row-reverse;
+        
+    }   
+        
+    .bob .bob-text {
+
+        width: 100%;
+    }
+        
+    
+    /*Contact Us */
+
+
+    .contact-us h2 {
+        padding-left: 20px;
+ 
+    }
+
+
+/*Contact Us - Send us a message*/
+
+    .message h3 {
+        padding-left: 20px;
+    
+    }
+
+    .label {
+        padding-left: 20px;
+    
+    }
+
+    .message input[type=text] {
+        width: 90%;
+        padding-left:30px;
+        margin-bottom: 10px;
+
+    }
+
+    .message input[type=email] {
+        width: 90%;
+        padding-left:30px;
+        margin-bottom: 10px;
+    }
+
+    .message textarea[name=message] {
+
+        margin-left:20px;
+        margin-bottom: 10px;
+        width: 95%;
+        height:150px;
+    }
+
+    .button-2 {
+        margin-bottom: 35px;
+   
+    }
+
+
+
+    /*Contact Us - HOO */
+
+
+
+    .hoo h3 {
+        padding-left: 80px;
+        padding-top: 10px;
+        padding-bottom: 20px; 
+        font-size: 25px;
+        font-weight:bold;
+    
+    }
+
+    table, th, td {
+        padding: 15px;
+         margin-left: 80px;
+    }
+
+    table {
+        width: 85%;
+        font-size: 12px;
+    }
+    
+
+    .contact-container {
+
+        padding-left: 60px;
+        padding-right: 60px;
+        display: grid;
+        grid-template-columns:2;
+        grid-template-rows:3;
+        grid-template-areas:
+          "contact-us contact-us"
+          "message location"
+          "hoo hoo";
+      }
+      
+              .contact-us {
+                  grid-area: contact-us;
+              }
+              .message {
+                  grid-area: message;
+              }
+              .hoo {
+                  grid-area: hoo;
+              }
+              .location {
+                  grid-area: location;
+              }
+            
+
+
+
+
+
+
+
+/*Contact Us - Location */
+
+.location h3 {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px; 
+    font-size: 25px;
+    font-weight:bold;
+
 }
+
+iframe {
+    width: 95%;
+    padding-left: 15px;
+   
+}
+
+/*Footer*/
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color:#c78c06;
+    line-height: 2;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+    
+        
+        
+        
+        
+        
+    }
+        
+        /*display: grid;
+        grid-template-columns:3;
+        grid-template-rows:3;
+        grid-template-areas:
+
+            "our-team our-team"
+            "john-image john-text"
+            "bob-image bob-text";
+
+         }
+
+
+            .our-team {
+                grid-area:our-team;
+            }
+            .john .john-image {
+                grid-area:john-image;
+            }
+        
+            .john .john-text {
+                grid-area:john-text;
+            }
+            
+            .bob .bob-image {
+                grid-area:bob-image;
+            }
+
+            .bob .bob-text {
+                grid-area:bob-text;
+            } */
+
+
 
 
 
