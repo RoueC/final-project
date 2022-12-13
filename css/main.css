@@ -2,29 +2,85 @@
 /*Colours values #c78c06, #ffe6ac, #222 and white*/
 
 
-.container {
-    display:block;
-    margin: auto;
+
+body {
+    margin: 0 auto;
+}
+
+.container{
+    
     max-width: 1200px;
     font-family:'Open Sans', sans-serif;
-   
     
 }
 
-li a{
+.header {
+    text-align: center;
+    background-color: #000;
+  }
+  
+.logo {
+    text-align:left;
+    padding-bottom: 10px;
+    background-color:#c78c06; 
+  }
+
+.home{
+    background-color:#c78c06; 
+    color: black;
+
+  }
+  
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+li {
+    padding: 1rem 0;
+  }
+  
+a {
+    text-decoration: none;
+    color: #c78c06;
+  }
+
+.search {
+    width: 85%;
+    padding: 6px;
+    margin-left:15px;
+}
+
+button {
+    padding: 6px;
+    color: sandybrown;
+    border-color: #c78c06;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+a:hover {
+    color:white;
+  }
+
+.home:hover {
+    color:white;
+  }
+
+
+/*li a{
   
     display: block;
     padding: 20px 50px;
     text-align: center;
     text-decoration: none; 
     font-family:'Open Sans', sans-serif;
-    color: #c78c06;
+    color: c78c06#;
        
 }
 
- ul {
-    
- }
 
 nav {
     background-color: black; 
@@ -66,7 +122,7 @@ form button {
     margin-left: 0px;
     margin-right: 5px;
 }
-
+*/
 
 /*styling for icons*/
 
@@ -126,8 +182,8 @@ h1 {
     background-color: rgb(0,0,0,.6);
     text-align: left;
     position: absolute;
-    top: 60%;
-    transform: translate(0%, -40%);
+    top:50%;
+    /* transform: translate(0%, -40%); */
 
 }
 
@@ -357,8 +413,8 @@ h4 {
 
 .vision-container {
 
-    width: 100%;
-    height: 300px;
+    /* width: 100%; */
+    height: 350px;
     margin:auto;
     font-family:'Open Sans', sans-serif;
     background-image: url("../images/vision.jpg");
@@ -377,7 +433,7 @@ h4 {
     padding: 15px 25px;
     margin: 10px;
     text-align: center;
-     text-decoration: none;
+    text-decoration: none;
     display: inline-block;
     font-size: 20px;
     
@@ -410,21 +466,21 @@ h4 {
 /*Our Team */
 .team-container {
     width: 100%;
-    padding: 15px 15px;
+    /*padding: 15px 15px;*/
     font-family: 'Open Sans', sans-serif;
     
 }
 
 .our-team h2 {
-    padding-bottom: 20px;
-    padding-top: 10px;
+    padding: 10px 10px 20px;
 
 }
 
 /*Our Team - John */
 .john {
     background-color: #ffe6ac;
-    justify-content: center;
+    margin: 15px; 
+    /*justify-content: center;*/
  
   
 }
@@ -472,7 +528,8 @@ h4 {
 /*Our Team - Bob */
 .bob {
     background-color: #ffe6ac;
-    justify-content: center;
+    margin: 15px; 
+    /* justify-content: center; */
    
   
 }
@@ -635,32 +692,19 @@ footer {
 
 
 
-/******* DESKTOP **********/
+/********************** DESKTOP ******************/
 
-@media screen and (min-width:760px) {
+@media screen and (min-width:760px) { 
 
-
-    .container {
-        display:block;
-        max-width: 1200px;
-        font-family:'Open Sans', sans-serif;  
-        
-    }
-
-    body {
+    /*nav { 
         width: 100%;
-       
-    }
-
-    nav { 
         background-color: black;
         overflow: hidden;
         display: flex;
+        flex-direction: row;
         justify-content:center;
         align-items: center;
-        padding: 10px 10px;
-
-
+           
     }
     
     ul li{
@@ -674,32 +718,72 @@ footer {
         background-color: black;
         margin-left: 15px;;
     }
+  */
 
+ 
+    .header {
+       
+        display: flex;
+        padding: 10px;
+        
+        
+    }
 
+    nav {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 1rem;
+     }
 
+    ul {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 5rem;
+        
+        
+    }
+
+    ul li {
+        
+       
+    }
+
+    a {
+        font-size: 15px;
+        gap: 1 rem;
+        padding: 10px;
+    }
+
+    .logo {
+
+       padding: 1px;
+       margin-left: 50px;
+        
+    }
+  
 
 
     /*Banner*/
 
     .banner-container {
 
-        width: 100%;
-        padding-left: 40px;
-        padding-right: 40px;
         background-image: url("../images/main-banner.jpg");
         background-color:black;
-        background-position: 100% 100%;
+        /* background-position: 100% 100%; */
         background-size: cover; 
     }
 
 
     .banner-text {
 
+        padding: 40px;
         background-color: rgb(0,0,0,.6);
         text-align: left;
         position: absolute;
-        top: 40%;
-        transform: translate(0%, -40%);
+        top: 20%;
+        /* transform: translate(0%, -40%); */
     
     }
 
@@ -710,7 +794,7 @@ footer {
     .about-container {
 
         margin:auto;
-        width: 100%;
+       
         padding-left: 60px;
         padding-right: 60px;
         padding-top: 10px;
@@ -726,7 +810,7 @@ footer {
     }
        
     .about-container .about-photo {
-       width: 100%;
+       width: 60%;
         
     }
 
@@ -735,6 +819,8 @@ footer {
         padding-left: 10px;
     }
 
+ 
+    /*Services */
 
     .services-container {
 
@@ -798,8 +884,9 @@ footer {
      /* Our Team */         
 
     .team-container {
-        padding-left: 80px;
-    
+        padding-left: 60px;
+        padding-right: 60px;
+        
 
     }
 
@@ -815,9 +902,17 @@ footer {
         
     .john .john-text {
 
-        width: 100%;   
+        width: 50%;
 
     }
+
+    .john .john-image {
+
+        width: 50%;
+
+    }
+
+
 
     .bob {
         display:flex;
@@ -827,10 +922,15 @@ footer {
         
     .bob .bob-text {
 
-        width: 100%;
+        width: 50%;
     }
         
-    
+    .bob .bob-image {
+
+        width: 50%;
+
+    }
+
     /*Contact Us */
 
 
@@ -841,6 +941,8 @@ footer {
 
 
 /*Contact Us - Send us a message*/
+
+  
 
     .message h3 {
         padding-left: 20px;
@@ -853,16 +955,33 @@ footer {
     }
 
     .message input[type=text] {
-        width: 90%;
-        padding-left:30px;
-        margin-bottom: 10px;
+
+        width: 100%;
+        padding: 10px 15px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 2px;
+        box-sizing: border-box;
+        /*width: 50%;
+        padding-left:50px;
+        margin-bottom: 10px;*/
 
     }
 
     .message input[type=email] {
-        width: 90%;
+        
+        width: 100%;
+        padding: 10px 15px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 2px;
+        box-sizing: border-box;
+        
+        /*width: 50%;
         padding-left:30px;
-        margin-bottom: 10px;
+        margin-bottom: 10px;*/
     }
 
     .message textarea[name=message] {
@@ -871,6 +990,8 @@ footer {
         margin-bottom: 10px;
         width: 95%;
         height:150px;
+        border-radius: 2px;
+        
     }
 
     .button-2 {
@@ -885,7 +1006,7 @@ footer {
 
 
     .hoo h3 {
-        padding-left: 80px;
+        padding-left: 20px;
         padding-top: 10px;
         padding-bottom: 20px; 
         font-size: 25px;
@@ -895,7 +1016,7 @@ footer {
 
     table, th, td {
         padding: 15px;
-         margin-left: 80px;
+        margin-left: 20px;
     }
 
     table {
@@ -929,7 +1050,7 @@ footer {
               .location {
                   grid-area: location;
               }
-            
+}         
 
 
 
@@ -940,6 +1061,7 @@ footer {
 /*Contact Us - Location */
 
 .location h3 {
+
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 20px; 
@@ -949,7 +1071,7 @@ footer {
 }
 
 iframe {
-    width: 95%;
+    width: 100%;
     padding-left: 15px;
    
 }
