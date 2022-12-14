@@ -641,7 +641,7 @@ ul {
 
 a {
     font-size: 16px;
-    gap: 1 rem;
+    gap: 20px;
     padding: 10px;
 }
 
@@ -713,8 +713,7 @@ a {
     padding-left: 60px;
     padding-right: 60px;
     display: grid;
-    grid-template-columns:6;
-    grid-template-rows:3;
+    grid-template-columns: repeat(6,1fr);
     grid-template-areas:
         "our-services our-services our-services our-services our-services our-services"
         "digital digital digital marketing marketing marketing"
@@ -747,13 +746,23 @@ a {
 
 }
     
-.button {
-    padding-left: 20%;
-    padding-right: 20%;
-    margin: 10px;       
+.digital a, .marketing a {
+   
+    width: 86%;
+    margin: 10px; 
+    justify-content: center;    
+    align-items: center;  
         
 }
 
+.video a, .web a, .print a {
+
+    width: 79%;
+    margin: 10px; 
+    justify-content: center;    
+    align-items: center; 
+
+}
 
 /* Vision */
 /* Used styling below to change size, font and alignment of elements vision section */
@@ -792,7 +801,7 @@ a {
 }
 
 .our-team {
-    padding-left: 15x;
+    padding-left: 15px;
     padding-top: 20px;
 }
 
@@ -930,8 +939,7 @@ wherein send message and location are next to each other */
     padding-left: 60px;
     padding-right: 60px;
     display: grid;
-    grid-template-columns:2;
-    grid-template-rows:3;
+    grid-template-columns: repeat(2,1fr);
     grid-template-areas:
         "contact-us contact-us"
         "message location"
