@@ -4,12 +4,13 @@
 
 
 body {
-    margin: 0 auto;
     font-family:'Open Sans', sans-serif;
 }
 
 .container .container2 {
     max-width: 1200px;
+    margin: 0 auto;
+    
         
 }
 
@@ -33,7 +34,7 @@ body {
     background-color:#c78c06; 
     color: black;
 
-  } */
+  }  */
   
 ul {
     list-style: none;
@@ -824,6 +825,7 @@ a {
     width: 50%;
 
 }
+
 
 .bob {
     display:flex;
