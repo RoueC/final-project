@@ -5,14 +5,17 @@
 
 body {
     margin: 0 auto;
+    font-family:'Open Sans', sans-serif;
 }
 
-.container{
-    
+.container .container2 {
     max-width: 1200px;
-    font-family:'Open Sans', sans-serif;
-    
+        
 }
+
+
+/*Header*/
+/* Used the styling below for mobile header and navigation bar */
 
 .header {
     text-align: center;
@@ -70,61 +73,7 @@ a:hover {
   }
 
 
-/*li a{
-  
-    display: block;
-    padding: 20px 50px;
-    text-align: center;
-    text-decoration: none; 
-    font-family:'Open Sans', sans-serif;
-    color: c78c06#;
-       
-}
 
-
-nav {
-    background-color: black; 
-
-}
-
-a:hover {
-    color:white;
-  }
-
-.home:hover {
-    color:white;
-  }
-
-.logo   {
-    background-color:#c78c06; 
-    padding-top: 15px;
-    padding-bottom: 20px;  
-}
-
-nav .home {
-    background-color:#c78c06; 
-    color:black;
-}
-
-
-form input[type=text] {
-    width: 85%;
-    padding: 6px;
-    margin-left:15px;
-}
-
-form button {
-    padding: 6px;
-    color: sandybrown;
-    border-color: #c78c06;
-    background-color: black;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 5px;
-}
-*/
-
-/*styling for icons*/
 
 .fa-caret-right {
 
@@ -135,6 +84,8 @@ form button {
 
 
 /* Banner */
+/* Used background-image to show banner photo and background-color with
+opacity for banner text bakground  */
 
 .banner-container {
 
@@ -183,12 +134,12 @@ h1 {
     text-align: left;
     position: absolute;
     top:50%;
-    /* transform: translate(0%, -40%); */
 
 }
 
 
 /*About-us */
+/* Used the styling below for mobile about us section */
 
 .about-container {
     margin: auto;
@@ -204,7 +155,6 @@ h1 {
 
 
 h2 {
-    font-family:'Open Sans', sans-serif;
     font-size: 38px;
     font-weight:bold;
     padding-bottom: 10px;
@@ -212,7 +162,6 @@ h2 {
 }
 
 h4 {
-    font-family:'Open Sans', sans-serif;
     font-size: 25px;
     font-weight:bold;
     padding-bottom: 10px;
@@ -221,7 +170,6 @@ h4 {
 }
 
 .about-us p {
-    font-family:'Open Sans', sans-serif;
     font-size:12px;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -231,6 +179,8 @@ h4 {
 
 
 /*Services */
+/* Used multiple classes to style different services card*/
+
 .service-container {
    width: 100%;
    margin: auto;
@@ -243,6 +193,7 @@ h4 {
 }
 
 /*Services - Digital */
+
 .digital  {
 
     justify-content: center;
@@ -257,7 +208,6 @@ h4 {
 }
 
 .digital p {
-    font-family:'Open Sans', sans-serif;
     font-size:12px;
     padding-left: 10px;
     padding-top: 10px;
@@ -271,9 +221,8 @@ h4 {
     padding-top: 30px;
 }
 
-.button { /* button style for services */
+.button {
 
-    font-family:'Open Sans', sans-serif;
     background-color: black; 
     border: none; 
     color: white;
@@ -288,6 +237,7 @@ h4 {
 }
 
 /*Services - Marketing */
+
 .marketing  {
 
     justify-content: center;
@@ -297,12 +247,10 @@ h4 {
 }
 
 .marketing-image {
-
     width: 100%;
 }
 
 .marketing p {
-    font-family:'Open Sans', sans-serif;
     font-size:12px;
     padding-left: 10px;
     padding-top: 10px;
@@ -318,6 +266,7 @@ h4 {
 
 
 /*Services - Video */
+
 .video  {
 
     justify-content: center;
@@ -327,12 +276,10 @@ h4 {
 }
 
 .video-image {
-
     width: 100%;
 }
 
 .video p {
-    font-family:'Open Sans', sans-serif;
     font-size:12px;
     padding-left: 10px;
     padding-top: 10px;
@@ -350,7 +297,6 @@ h4 {
 /*Services - Web */
 
 .web  {
-
     justify-content: center;
     margin: 15px 15px;
     background-color: #ffe6ac;
@@ -358,12 +304,10 @@ h4 {
 }
 
 .web-image {
-
     width: 100%;
 }
 
 .web p {
-    font-family:'Open Sans', sans-serif;
     font-size:12px;
     padding-left: 10px;
     padding-top: 10px;
@@ -381,7 +325,6 @@ h4 {
 
 
 .print  {
-
     justify-content: center;
     margin: 15px 15px;
     background-color: #ffe6ac;
@@ -389,12 +332,10 @@ h4 {
 }
 
 .print-image {
-
     width: 100%;
 }
 
 .print p {
-    font-family:'Open Sans', sans-serif;
     font-size:12px;
     padding-left: 10px;
     padding-top: 10px;
@@ -410,13 +351,11 @@ h4 {
 
 
 /*Vision*/
+/* Used background-image to show vision photo and added styling along with button */
 
 .vision-container {
-
-    /* width: 100%; */
     height: 350px;
-    margin:auto;
-    font-family:'Open Sans', sans-serif;
+    /* margin:auto; */
     background-image: url("../images/vision.jpg");
     background-color:white;
     background-position: 100% 50%;
@@ -425,8 +364,6 @@ h4 {
 
 
 .vision a { 
-
-    font-family:'Open Sans', sans-serif;
     color: white;
     background-color: black; 
     border-color:  #c78c06; 
@@ -434,14 +371,13 @@ h4 {
     margin: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 20px;
     
 
 }
 
 .vision h3 {
-
     color:white;
     font-size: 30px;
     font-weight: bold;
@@ -452,7 +388,6 @@ h4 {
 }
 
 .vision p {
-
     color:white;
     font-size: 12px;
     line-height: 1.5;
@@ -464,12 +399,8 @@ h4 {
 
 
 /*Our Team */
-.team-container {
-    width: 100%;
-    /*padding: 15px 15px;*/
-    font-family: 'Open Sans', sans-serif;
-    
-}
+/* Used styling below to for Our Team section. Added line before each paragraph. */
+
 
 .our-team h2 {
     padding: 10px 10px 20px;
@@ -477,12 +408,10 @@ h4 {
 }
 
 /*Our Team - John */
+
 .john {
     background-color: #ffe6ac;
-    margin: 15px; 
-    /*justify-content: center;*/
- 
-  
+    margin: 15px;   
 }
 
 .john-image {
@@ -528,14 +457,11 @@ h4 {
 /*Our Team - Bob */
 .bob {
     background-color: #ffe6ac;
-    margin: 15px; 
-    /* justify-content: center; */
-   
-  
+    margin: 15px;       
 }
 
 .bob-image {
-    width: 100%;    
+     width: 100%; 
 }
 
 .bob-text p {
@@ -565,15 +491,8 @@ h4 {
 }
 
 
-
-
 /*Contact Us */
 
-.contact-container {
-    width: 100%;
-    margin: auto;
-    font-family: 'Open Sans', sans-serif;
-}
 
 .contact-us h2 {
     padding-left: 15px;
@@ -696,143 +615,101 @@ footer {
 
 @media screen and (min-width:760px) { 
 
-    /*nav { 
-        width: 100%;
-        background-color: black;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items: center;
-           
-    }
-    
-    ul li{
-         
-        display: block; 
-        float:left;
-      
-    }
-
-    .logo{
-        background-color: black;
-        margin-left: 15px;;
-    }
-  */
-
  
-    .header {
+.header {
        
-        display: flex;
-        padding: 10px;
+    display: flex;
+    padding: 10px;
+              
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;       
         
-        
-    }
+}
 
-    nav {
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        gap: 1rem;
-     }
+a {
+    font-size: 16px;
+    gap: 1 rem;
+    padding: 10px;
+}
 
-    ul {
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        gap: 5rem;
-        
-        
-    }
-
-    ul li {
-        
-       
-    }
-
-    a {
-        font-size: 15px;
-        gap: 1 rem;
-        padding: 10px;
-    }
-
-    .logo {
-
+.logo {
        padding: 1px;
        margin-left: 50px;
         
     }
   
+/*Banner*/
 
+.banner-container {
+    background-image: url("../images/main-banner.jpg");
+    background-color:black;
+    background-size: cover; 
+}
 
-    /*Banner*/
-
-    .banner-container {
-
-        background-image: url("../images/main-banner.jpg");
-        background-color:black;
-        /* background-position: 100% 100%; */
-        background-size: cover; 
-    }
-
-
-    .banner-text {
-
-        padding: 40px;
-        background-color: rgb(0,0,0,.6);
-        text-align: left;
-        position: absolute;
-        top: 20%;
-        /* transform: translate(0%, -40%); */
+.banner-text {
+    padding: 40px;
+    background-color: rgb(0,0,0,.6);
+    text-align: left;
+    position: absolute;
+    top: 20%;
     
-    }
+}
+
+.banner-text p {
+    font-size: 15px;
+
+}
 
 
+/* About Us */
 
-    /* About Us */
-
-    .about-container {
-
-        margin:auto;
-       
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+.about-container {
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px 10px 60px;
         
-    }
-
-    .about-container {
-        display:flex;
-        justify-content: center;
-        align-items: center;
+}
        
-    }
-       
-    .about-container .about-photo {
-       width: 60%;
+.about-container .about-photo {
+    width: 60%;
         
-    }
+}
 
-    .about-us {
+.about-us {
+    font-size: 14px;
+    padding-left: 10px;
+    
+}
 
-        padding-left: 10px;
-    }
+.about-us p {
+    font-size: 14px;
+}
 
  
-    /*Services */
+/*Services */
 
-    .services-container {
-
-        padding-left: 60px;
-        padding-right: 60px;
-        display: grid;
-        grid-template-columns:6;
-        grid-template-rows:3;
-        grid-template-areas:
-          "our-services our-services our-services our-services our-services our-services"
-          "digital digital digital marketing marketing marketing"
-          "video video web web print print";
+.services-container {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns:6;
+    grid-template-rows:3;
+    grid-template-areas:
+        "our-services our-services our-services our-services our-services our-services"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print";
       }
       
               .our-services {
@@ -854,188 +731,188 @@ footer {
                   grid-area: print;
               }
 
-
-    /* Vision */
-
-
-    .vision-container {
-
-        height: 270px;       
+.services-container p {
+        font-size: 14px;
     }
-
     
-    .vision h3 {
-        padding-left: 80px;
-    }
-
-    .vision p {
-        padding-left: 80px;
-        padding-bottom: 20px;
-
-    }
-
-    .button-3 { 
-        padding-left: 25px;
-        margin-left: 80px;
-    }
 
 
+/* Vision */
 
-     /* Our Team */         
-
-    .team-container {
-        padding-left: 60px;
-        padding-right: 60px;
-        
-
-    }
-
-    .our-team {
-        padding-left: 15x;
-    }
-
-
-    .john {
-        display:flex;
-          
-    }   
-        
-    .john .john-text {
-
-        width: 50%;
-
-    }
-
-    .john .john-image {
-
-        width: 50%;
-
-    }
-
-
-
-    .bob {
-        display:flex;
-        flex-direction: row-reverse;
-        
-    }   
-        
-    .bob .bob-text {
-
-        width: 50%;
-    }
-        
-    .bob .bob-image {
-
-        width: 50%;
-
-    }
-
-    /*Contact Us */
-
-
-    .contact-us h2 {
-        padding-left: 20px;
+.vision-container {
+    height: 270px;       
+    
+}
  
-    }
+.vision h3 {
+    padding-left: 80px;
+    
+}
+
+.vision p {
+    padding-left: 80px;
+    padding-bottom: 10px;
+    font-size: 14px;
+
+}
+
+.button-3 { 
+    padding-left: 25px;
+    margin-left: 20px;
+
+}
+
+
+/* Our Team */         
+
+.team-container {
+    padding-left: 60px;
+    padding-right: 60px;        
+
+}
+
+.our-team {
+    padding-left: 15x;
+    padding-top: 20px;
+}
+
+
+.john {
+    display:flex;
+          
+}   
+        
+.john .john-text {
+    width: 50%;
+
+}
+
+.john-text p {
+    font-size: 15px;
+}
+
+.john .john-image {
+    width: 50%;
+
+}
+
+.bob {
+    display:flex;
+    flex-direction: row-reverse;
+        
+}   
+        
+.bob .bob-text {
+    width: 50%;
+
+}
+        
+.bob .bob-image {
+    width: 50%;
+
+}
+
+.bob-text p {
+    font-size: 15px;
+}
+
+
+/*Contact Us */
+
+.contact-us h2 {
+    padding-left: 20px;
+ 
+}
 
 
 /*Contact Us - Send us a message*/
 
-  
-
-    .message h3 {
-        padding-left: 20px;
+.message h3 {
+    padding-left: 20px;
     
-    }
+}
 
-    .label {
-        padding-left: 20px;
+.label {
+    padding-left: 20px;
     
-    }
+}
 
-    .message input[type=text] {
+.message input[type=text] {
+    width: 95%;
+    padding: 10px 10px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    box-sizing: border-box;
+    
+}
 
-        width: 100%;
-        padding: 10px 15px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 2px;
-        box-sizing: border-box;
-        /*width: 50%;
-        padding-left:50px;
-        margin-bottom: 10px;*/
-
-    }
-
-    .message input[type=email] {
+.message input[type=email] {
+    width: 95%;
+    padding: 10px 10px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    box-sizing: border-box;
         
-        width: 100%;
-        padding: 10px 15px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 2px;
-        box-sizing: border-box;
+}
+
+.message textarea[name=message] {
+    margin-left:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 95%;
+    height:150px;
+    border-radius: 2px;
         
-        /*width: 50%;
-        padding-left:30px;
-        margin-bottom: 10px;*/
-    }
+}
 
-    .message textarea[name=message] {
-
-        margin-left:20px;
-        margin-bottom: 10px;
-        width: 95%;
-        height:150px;
-        border-radius: 2px;
-        
-    }
-
-    .button-2 {
+.button-2 {
         margin-bottom: 35px;
-   
+
     }
 
 
+/*Contact Us - HOO */
 
-    /*Contact Us - HOO */
-
-
-
-    .hoo h3 {
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 20px; 
-        font-size: 25px;
-        font-weight:bold;
+.hoo h3 {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px; 
+    font-size: 25px;
+    font-weight:bold;
     
-    }
+}
 
-    table, th, td {
-        padding: 15px;
-        margin-left: 20px;
-    }
-
-    table {
-        width: 85%;
-        font-size: 12px;
-    }
+table, th, td {
+    padding: 15px;
+    margin-left: 20px;
+}
     
 
-    .contact-container {
+table {
+    width: 85%;
+    font-size: 12px;
+    
+}
 
-        padding-left: 60px;
-        padding-right: 60px;
-        display: grid;
-        grid-template-columns:2;
-        grid-template-rows:3;
-        grid-template-areas:
-          "contact-us contact-us"
-          "message location"
-          "hoo hoo";
+.label {
+    font-size: 14px;
+}
+    
+
+.contact-container {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns:2;
+    grid-template-rows:3;
+    grid-template-areas:
+        "contact-us contact-us"
+        "message location"
+        "hoo hoo";
       }
       
               .contact-us {
@@ -1050,18 +927,12 @@ footer {
               .location {
                   grid-area: location;
               }
-}         
-
-
-
-
-
+       
 
 
 /*Contact Us - Location */
 
 .location h3 {
-
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 20px; 
@@ -1073,6 +944,7 @@ footer {
 iframe {
     width: 100%;
     padding-left: 15px;
+    padding-bottom: 5px;
    
 }
 
@@ -1088,194 +960,8 @@ footer {
     padding-bottom: 20px;
     background-color: black;
 }
-
-    
-        
-        
-        
-        
-        
-    }
-        
-        /*display: grid;
-        grid-template-columns:3;
-        grid-template-rows:3;
-        grid-template-areas:
-
-            "our-team our-team"
-            "john-image john-text"
-            "bob-image bob-text";
-
-         }
-
-
-            .our-team {
-                grid-area:our-team;
-            }
-            .john .john-image {
-                grid-area:john-image;
-            }
-        
-            .john .john-text {
-                grid-area:john-text;
-            }
-            
-            .bob .bob-image {
-                grid-area:bob-image;
-            }
-
-            .bob .bob-text {
-                grid-area:bob-text;
-            } */
-
-
-
-
-
-
-
-
-
-/*
-
-.banner-container {
-    height: 100%;
-    margin: 0;
-}
-
-.banner-image {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-
-}
-
-.banner-text {
-    position: absolute;
-    text-align: center;
-    top: 100%;
-    bottom: 100%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-*/
-
-
-
-
-
-
-
-/*body {
-    margin: auto;
-}
-
-.header {
-
-    background-color: black;
-    overflow: hidden;
-
-}
-
-.navigation li{
-    float: left;
-    display: block; 
-    text-align: center;
-    padding: 14px 16px;    
-}
-
-.navigation a {
-    text-decoration: none;  
-    color: sandybrown;
-}
-
-
-.fa-search {
-    color: sandybrown;
-    border: auto;
-    border-color: sandybrown;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-
-.message input[type=text], [type=email] {
-    width:25%;
-}
-
-textarea[name=message] {
-    width:50%;
-    height:200%;
-}
-
-
-
-.banner-image {
-    position: relative;
-
-}
-
-.banner-text {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    bottom: 50%;
-    
-} 
-
-
-.about-container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
    
 }
-
-.about-container .about-photo{
-
-    width: 100%;    
-}
-
-.about-container .about-photo{
-
-   width: 50%;
+        
+        
     
-}
-    
-
-.services-container {
-
-  display: grid;
-  grid-template-columns:6;
-  grid-template-rows:3;
-  grid-template-areas:
-    "our-services our-services our-services our-services our-services our-services"
-    "digital digital digital marketing marketing marketing"
-    "video video web web print print";
-}
-
-        .our-services {
-            grid-area: our-services;
-        }
-        .digital {
-            grid-area: digital;
-        }
-        .marketing {
-            grid-area: marketing;
-        }
-        .video {
-            grid-area: video;
-        }
-        .web {
-            grid-area: web;
-        }
-        .print {
-            grid-area: print;
-        }
-   
-    */
