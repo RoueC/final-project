@@ -13,6 +13,7 @@ body {
         
 }
 
+/********************** MOBILE ******************/
 
 /*Header*/
 /* Used the styling below for mobile header and navigation bar */
@@ -28,11 +29,11 @@ body {
     background-color:#c78c06; 
   }
 
-.home{
+/* .home{ 
     background-color:#c78c06; 
     color: black;
 
-  }
+  } */
   
 ul {
     list-style: none;
@@ -41,6 +42,8 @@ ul {
   
 li {
     padding: 1rem 0;
+    text-decoration: none;
+    color: #c78c06;
   }
   
 a {
@@ -73,10 +76,7 @@ a:hover {
   }
 
 
-
-
 .fa-caret-right {
-
     font-size: 30px;
     padding: 10px;
 
@@ -84,11 +84,10 @@ a:hover {
 
 
 /* Banner */
-/* Used background-image to show banner photo and background-color with
+/* Instead of using relative and absolute, used background-image to show banner photo and background-color with
 opacity for banner text bakground  */
 
 .banner-container {
-
     height: 600px;
     font-family:'Open Sans', sans-serif;
     background-image: url("../images/main-banner.jpg");
@@ -99,7 +98,6 @@ opacity for banner text bakground  */
 }
 
 h1 {
-
     font-size: 60px;
     color: white;
     font-weight: bold;
@@ -133,7 +131,7 @@ h1 {
     background-color: rgb(0,0,0,.6);
     text-align: left;
     position: absolute;
-    top:50%;
+    top:60%;
 
 }
 
@@ -351,11 +349,10 @@ h4 {
 
 
 /*Vision*/
-/* Used background-image to show vision photo and added styling along with button */
+/* Used background-image to show vision photo and added styling */
 
 .vision-container {
-    height: 350px;
-    /* margin:auto; */
+    height: 300px;
     background-image: url("../images/vision.jpg");
     background-color:white;
     background-position: 100% 50%;
@@ -367,11 +364,10 @@ h4 {
     color: white;
     background-color: black; 
     border-color:  #c78c06; 
-    padding: 15px 25px;
+    padding: 25px 25px;
     margin: 10px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
     font-size: 20px;
     
 
@@ -393,13 +389,13 @@ h4 {
     line-height: 1.5;
     padding-top: 10px;
     padding-left: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 
 }
 
 
 /*Our Team */
-/* Used styling below to for Our Team section. Added line before each paragraph. */
+/* Used styling below for Our Team section. Added line before each paragraph. */
 
 
 .our-team h2 {
@@ -503,6 +499,7 @@ h4 {
 
 
 /*Contact Us - Send us a message*/
+/* Used styling below to create input forms for send us a message section */
 
 .message h3 {
     padding-left:15px;
@@ -533,8 +530,8 @@ h4 {
     height:150px;
 }
 
+/* Send button styling */
 .button-2 {
-
     background-color: black; 
     border: none;
     color:#c78c06;
@@ -548,6 +545,7 @@ h4 {
 }
 
 /*Contact Us - HOO */
+/* Styling for table row and columns */
 
 .hoo {
     font-family: 'Open Sans', sans-serif;
@@ -580,6 +578,7 @@ th {
 }
 
 /*Contact Us - Location */
+/* Styling for map */
 
 .location h3 {
     padding-left: 15px;
@@ -593,10 +592,12 @@ th {
 iframe {
     width: 95%;
     padding-left: 15px;
+    padding-bottom: 20px;
    
 }
 
 /*Footer*/
+/* styling for footer */
 
 footer {
     font-family: 'Open Sans', sans-serif;
@@ -616,15 +617,17 @@ footer {
 @media screen and (min-width:760px) { 
 
  
-.header {
-       
+ /* Styling for header of big screen. Used flex to align list items. */
+.header {      
     display: flex;
     padding: 10px;
-              
+                
 }
 
 nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
@@ -632,7 +635,7 @@ nav {
 ul {
     display: flex;
     align-items: center;
-    gap: 5rem;       
+    gap: 2rem;       
         
 }
 
@@ -643,26 +646,30 @@ a {
 }
 
 .logo {
-       padding: 1px;
-       margin-left: 50px;
+    padding: 1px;
+    margin-left: 50px;
         
-    }
-  
-/*Banner*/
-
-.banner-container {
-    background-image: url("../images/main-banner.jpg");
-    background-color:black;
-    background-size: cover; 
 }
 
-.banner-text {
-    padding: 40px;
-    background-color: rgb(0,0,0,.6);
-    text-align: left;
-    position: absolute;
-    top: 20%;
+.search {
+   width: 200px;
+
     
+}
+
+  
+/*Banner*/
+/* Added margin to text background to float text and button */
+
+
+.banner-text {
+    margin: 30px;
+    top: 20%; 
+    
+}
+
+.banner-text h1 {
+    font-size: 65px;
 }
 
 .banner-text p {
@@ -672,6 +679,7 @@ a {
 
 
 /* About Us */
+/* Used flex to create two sections for about us photo and image */
 
 .about-container {
     margin:auto;
@@ -699,6 +707,7 @@ a {
 
  
 /*Services */
+ /* Used grid to display our services componens using  6 columns and 3 rows */
 
 .services-container {
     padding-left: 60px;
@@ -717,9 +726,11 @@ a {
               }
               .digital {
                   grid-area: digital;
+                  
               }
               .marketing {
                   grid-area: marketing;
+                  
               }
               .video {
                   grid-area: video;
@@ -732,12 +743,20 @@ a {
               }
 
 .services-container p {
-        font-size: 14px;
-    }
+    font-size: 14px;
+
+}
     
+.button {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 10px;       
+        
+}
 
 
 /* Vision */
+/* Used styling below to change size, font and alignment of elements vision section */
 
 .vision-container {
     height: 270px;       
@@ -751,19 +770,20 @@ a {
 
 .vision p {
     padding-left: 80px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     font-size: 14px;
 
 }
 
-.button-3 { 
+.vision a { 
     padding-left: 25px;
-    margin-left: 20px;
-
+    margin-left:80px;
+    
 }
 
 
-/* Our Team */         
+/* Our Team */     
+/* Used flex to display elements of Our Team so photo and text will appear side to side     */
 
 .team-container {
     padding-left: 60px;
@@ -826,6 +846,7 @@ a {
 
 
 /*Contact Us - Send us a message*/
+/* Used styling below for labels and input form elements */
 
 .message h3 {
     padding-left: 20px;
@@ -876,6 +897,7 @@ a {
 
 
 /*Contact Us - HOO */
+/* Table row and column styling */
 
 .hoo h3 {
     padding-left: 20px;
@@ -893,7 +915,7 @@ table, th, td {
     
 
 table {
-    width: 85%;
+    width: 100%;
     font-size: 12px;
     
 }
@@ -902,7 +924,8 @@ table {
     font-size: 14px;
 }
     
-
+/* Used grid with 2 columns and 3 rows to display elements of contact us,  
+wherein send message and location are next to each other */
 .contact-container {
     padding-left: 60px;
     padding-right: 60px;
@@ -929,8 +952,8 @@ table {
               }
        
 
-
 /*Contact Us - Location */
+/* Styling for map */
 
 .location h3 {
     padding-left: 15px;
@@ -949,16 +972,12 @@ iframe {
 }
 
 /*Footer*/
+/* Styling for footer */
 
 footer {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    color:#c78c06;
-    line-height: 2;
-    padding-left: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: black;
+
+    font-size: 13px;
+    padding-left: 8%;   
 }
    
 }
