@@ -2,87 +2,68 @@
 /*Colours values #c78c06, #ffe6ac, #222 and white*/
 
 
-
 body {
     font-family:'Open Sans', sans-serif;
 }
 
 .container .container2 {
     max-width: 1200px;
-    margin: 0 auto;
-    
-        
+    margin: 0 auto;      
 }
 
 /********************** MOBILE ******************/
-
 /*Header*/
 /* Used the styling below for mobile header and navigation bar */
 
-.header {
+ 
+nav {
+    display: block; 
+    color: #c78c06;
     text-align: center;
     background-color: #000;
-  }
-  
-.logo {
-    text-align:left;
-    padding-bottom: 10px;
-    background-color:#c78c06; 
+}  
+
+nav img {
+    float:left;
   }
 
-/* .home{ 
-    background-color:#c78c06; 
-    color: black;
+nav .home { 
+    padding: 8rem 0 1rem 0;
+  }  
+  
 
-  }  */
-  
-ul {
-    list-style: none;
-    padding: 0;
-  }
-  
 li {
-    padding: 1rem 0;
+    padding: 20px;
     text-decoration: none;
-    color: #c78c06;
-  }
+  } 
+
+li:hover {
+    background-color: #c78c06;
+    color: #000;
+}
   
 a {
     text-decoration: none;
-    color: #c78c06;
+    color: inherit;
   }
 
 .search {
-    width: 85%;
-    padding: 6px;
-    margin-left:15px;
+    display: inline-block;
+    width: calc(100% - 70px - 24px);
+    height: calc(70px - 48px);
+    border: none;
+    vertical-align: middle;
+    font-size: 1px;
+    padding: 5px 10px;
 }
 
-button {
+button { 
     padding: 6px;
     color: sandybrown;
     border-color: #c78c06;
-    background-color: black;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 5px;
+    background-color: transparent;
+    margin: 0 5px 10px 0;
 }
-
-a:hover {
-    color:white;
-  }
-
-.home:hover {
-    color:white;
-  }
-
-
-.fa-caret-right {
-    font-size: 30px;
-    padding: 10px;
-
-}
-
 
 /* Banner */
 /* Instead of using relative and absolute, used background-image to show banner photo and background-color with
@@ -90,21 +71,17 @@ opacity for banner text bakground  */
 
 .banner-container {
     height: 600px;
-    font-family:'Open Sans', sans-serif;
     background-image: url("../images/main-banner.jpg");
     background-color:black;
-    background-size: cover;
-    background-position: 50% 50%;
-    
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
 
 h1 {
     font-size: 60px;
     color: white;
     font-weight: bold;
-    padding-top: 50px;
-    padding-left: 15px;
-    
+    padding: 50px 0 0 15px;   
 }
 
 .banner-text p {
@@ -123,19 +100,20 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
-   
-
+    font-size: 20px;
 }
 
 .banner-text {
     background-color: rgb(0,0,0,.6);
     text-align: left;
     position: absolute;
-    top:60%;
-
+    top:60%;   
 }
 
+ .fa-caret-right {
+   vertical-align: middle;
+   font-size: 30px;
+}
 
 /*About-us */
 /* Used the styling below for mobile about us section */
@@ -143,8 +121,7 @@ h1 {
 .about-container {
     margin: auto;
     padding:15px;
-    background-color: #ffe6ac;
-   
+    background-color: #ffe6ac;  
 }
 
 .about-photo {
@@ -152,28 +129,23 @@ h1 {
     padding-bottom:20px;
 }
 
-
 h2 {
     font-size: 38px;
     font-weight:bold;
-    padding-bottom: 10px;
- 
+    padding-bottom: 10px; 
 }
 
 h4 {
     font-size: 25px;
     font-weight:bold;
     padding-bottom: 10px;
-
-
 }
 
 .about-us p {
     font-size:12px;
     padding-top: 10px;
     padding-bottom: 15px;
-    line-height: 1.5;
- 
+    line-height: 1.5; 
 }
 
 
@@ -182,37 +154,29 @@ h4 {
 
 .service-container {
    width: 100%;
-   margin: auto;
-   
+   margin: auto;  
 }
 
 .our-services h2 {
-    padding-left: 10px;
-    padding-top: 30px;
+    padding: 30px 0 0 10px;
 }
 
 /*Services - Digital */
 
 .digital  {
-
     justify-content: center;
     margin: 15px 15px;
     background-color: #ffe6ac;
-
 }
 
 .digital-image {
-
     width: 100%;
 }
 
 .digital p {
     font-size:12px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     line-height: 1.5;
-
+    padding: 10px 0 10px 10px;
 }
 
 .digital h4 {
@@ -221,28 +185,23 @@ h4 {
 }
 
 .button {
-
-    background-color: black; 
-    border: none; 
-    color: white;
-    padding: 15px 25px;
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    
-
+   background-color: black; 
+   border: none; 
+   color: white;
+   padding: 15px 25px;
+   margin: 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;    
 }
 
 /*Services - Marketing */
 
 .marketing  {
-
     justify-content: center;
     margin: 15px 15px;
     background-color: #ffe6ac;
-
 }
 
 .marketing-image {
@@ -251,10 +210,8 @@ h4 {
 
 .marketing p {
     font-size:12px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     line-height: 1.5;
+    padding: 10px 0 10px 10px;
 
 }
 
@@ -267,11 +224,9 @@ h4 {
 /*Services - Video */
 
 .video  {
-
     justify-content: center;
     margin: 15px 15px;
     background-color: #ffe6ac;
-
 }
 
 .video-image {
@@ -280,11 +235,8 @@ h4 {
 
 .video p {
     font-size:12px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     line-height: 1.5;
-
+    padding: 10px 0 10px 10px;
 }
 
 .video h4 {
@@ -299,7 +251,6 @@ h4 {
     justify-content: center;
     margin: 15px 15px;
     background-color: #ffe6ac;
-
 }
 
 .web-image {
@@ -308,11 +259,8 @@ h4 {
 
 .web p {
     font-size:12px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     line-height: 1.5;
-
+    padding: 10px 0 10px 10px;
 }
 
 .web h4 {
@@ -322,12 +270,10 @@ h4 {
 
 /*Services - Print */
 
-
 .print  {
     justify-content: center;
     margin: 15px 15px;
     background-color: #ffe6ac;
-
 }
 
 .print-image {
@@ -336,11 +282,8 @@ h4 {
 
 .print p {
     font-size:12px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     line-height: 1.5;
-
+    padding: 10px 0 10px 10px;
 }
 
 .print h4 {
@@ -360,7 +303,6 @@ h4 {
     background-size: cover; 
 }
 
-
 .vision a { 
     color: white;
     background-color: black; 
@@ -370,37 +312,28 @@ h4 {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    
-
 }
 
 .vision h3 {
     color:white;
     font-size: 30px;
     font-weight: bold;
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-bottom:20px;
-
+    padding: 30px 0 20px 15px;
 }
 
 .vision p {
     color:white;
     font-size: 12px;
     line-height: 1.5;
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-bottom: 50px;
-
+    padding: 10px 0 50px 15px;
 }
-
 
 /*Our Team */
 /* Used styling below for Our Team section. Added line before each paragraph. */
 
 
 .our-team h2 {
-    padding: 10px 10px 20px;
+    padding: 30px 0 0 10px;
 
 }
 
@@ -450,7 +383,6 @@ h4 {
 }
 
 
-
 /*Our Team - Bob */
 .bob {
     background-color: #ffe6ac;
@@ -490,25 +422,18 @@ h4 {
 
 /*Contact Us */
 
-
 .contact-us h2 {
-    padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-
+    padding: 30px 0 50px 10px;
 }
-
 
 /*Contact Us - Send us a message*/
 /* Used styling below to create input forms for send us a message section */
 
 .message h3 {
     padding-left:15px;
-    padding-top: 0px;
     padding-bottom: 20px; 
     font-size: 25px;
-    font-weight:bold;
-    
+    font-weight:bold;   
 }
 
 .label {
@@ -541,8 +466,7 @@ h4 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 17px;
-   
+    font-size: 17px;  
 }
 
 /*Contact Us - HOO */
@@ -557,8 +481,7 @@ h4 {
     padding-top: 10px;
     padding-bottom: 20px; 
     font-size: 25px;
-    font-weight:bold;
-    
+    font-weight:bold;   
 }
 
 table, th, td {
@@ -574,7 +497,6 @@ table {
 }
     
 th {
-
     background-color: #ffe6ac;
 }
 
@@ -587,14 +509,12 @@ th {
     padding-bottom: 20px; 
     font-size: 25px;
     font-weight:bold;
-
 }
 
 iframe {
     width: 95%;
     padding-left: 15px;
-    padding-bottom: 20px;
-   
+    padding-bottom: 20px;   
 }
 
 /*Footer*/
@@ -605,59 +525,54 @@ footer {
     font-size: 12px;
     color:#c78c06;
     line-height: 2;
-    padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0 20px 15px;
     background-color: black;
 }
-
 
 
 /********************** DESKTOP ******************/
 
 @media screen and (min-width:760px) { 
 
- 
  /* Styling for header of big screen. Used flex to align list items. */
-.header {      
-    display: flex;
-    padding: 10px;
-                
+
+
+nav, ul {
+    display:flex;  
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+    padding:10px 10px 10px 10px;    
 }
 
-ul {
-    display: flex;
-    align-items: center;
-    gap: 2rem;       
-        
+nav .home {
+    padding: 20px 0 20px 0;
 }
 
-a {
-    font-size: 16px;
-    gap: 20px;
-    padding: 10px;
+ul img {
+    padding: 10px 10px 10px 0;
 }
 
-.logo {
-    padding: 1px;
-    margin-left: 50px;
-        
+li { 
+    width:100px;
+    font-size: 16px;    
 }
 
 .search {
-   width: 200px;
-
-    
+    display:inline-block;
+    width: calc(20% - 10px - 20px);
+    height: 25px;
+    margin-left: 20px;    
 }
 
+button {
+   display: inline-block;
+   margin-top: 8.8px;
+   width: 40px;
+   height: 37px;
+}
   
 /*Banner*/
 /* Added margin to text background to float text and button */
@@ -665,8 +580,8 @@ a {
 
 .banner-text {
     margin: 30px;
-    top: 20%; 
-    
+    padding-bottom: 20px;
+    top: 30%;     
 }
 
 .banner-text h1 {
@@ -674,8 +589,7 @@ a {
 }
 
 .banner-text p {
-    font-size: 15px;
-
+    font-size: 16px;
 }
 
 
@@ -698,7 +612,7 @@ a {
 
 .about-us {
     font-size: 14px;
-    padding-left: 10px;
+    padding-left: 15px;
     
 }
 
@@ -744,51 +658,42 @@ a {
 
 .services-container p {
     font-size: 14px;
-
 }
     
 .digital a, .marketing a {
-   
     width: 86%;
     margin: 10px; 
     justify-content: center;    
-    align-items: center;  
-        
+    align-items: center;          
 }
 
 .video a, .web a, .print a {
-
     width: 79%;
     margin: 10px; 
     justify-content: center;    
     align-items: center; 
-
 }
 
 /* Vision */
 /* Used styling below to change size, font and alignment of elements vision section */
 
 .vision-container {
-    height: 270px;       
-    
+    height: 270px;           
 }
  
 .vision h3 {
-    padding-left: 80px;
-    
+    padding-left: 80px;    
 }
 
 .vision p {
     padding-left: 80px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     font-size: 14px;
-
 }
 
 .vision a { 
-    padding-left: 25px;
-    margin-left:80px;
-    
+    padding-left: 15px;
+    margin-left:80px;    
 }
 
 
@@ -798,7 +703,6 @@ a {
 .team-container {
     padding-left: 60px;
     padding-right: 60px;        
-
 }
 
 .our-team {
@@ -808,13 +712,11 @@ a {
 
 
 .john {
-    display:flex;
-          
+    display:flex;         
 }   
         
 .john .john-text {
     width: 50%;
-
 }
 
 .john-text p {
@@ -823,24 +725,20 @@ a {
 
 .john .john-image {
     width: 50%;
-
 }
 
 
 .bob {
     display:flex;
-    flex-direction: row-reverse;
-        
+    flex-direction: row-reverse;        
 }   
         
 .bob .bob-text {
     width: 50%;
-
 }
         
 .bob .bob-image {
     width: 50%;
-
 }
 
 .bob-text p {
@@ -852,7 +750,6 @@ a {
 
 .contact-us h2 {
     padding-left: 20px;
- 
 }
 
 
@@ -860,13 +757,11 @@ a {
 /* Used styling below for labels and input form elements */
 
 .message h3 {
-    padding-left: 20px;
-    
+    padding-left: 20px;   
 }
 
 .label {
-    padding-left: 20px;
-    
+    padding-left: 20px;    
 }
 
 .message input[type=text] {
@@ -876,8 +771,7 @@ a {
     display: inline-block;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 2px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
 .message input[type=email] {
@@ -887,8 +781,7 @@ a {
     display: inline-block;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 2px;
-    box-sizing: border-box;
-        
+    box-sizing: border-box;        
 }
 
 .message textarea[name=message] {
@@ -897,14 +790,12 @@ a {
     margin-top: 10px;
     width: 95%;
     height:150px;
-    border-radius: 2px;
-        
+    border-radius: 2px;        
 }
 
 .button-2 {
         margin-bottom: 35px;
-
-    }
+}
 
 
 /*Contact Us - HOO */
@@ -915,8 +806,7 @@ a {
     padding-top: 10px;
     padding-bottom: 20px; 
     font-size: 25px;
-    font-weight:bold;
-    
+    font-weight:bold;   
 }
 
 table, th, td {
@@ -927,8 +817,7 @@ table, th, td {
 
 table {
     width: 100%;
-    font-size: 12px;
-    
+    font-size: 12px;   
 }
 
 .label {
@@ -971,26 +860,18 @@ wherein send message and location are next to each other */
     padding-bottom: 20px; 
     font-size: 25px;
     font-weight:bold;
-
 }
 
 iframe {
     width: 100%;
     padding-left: 15px;
-    padding-bottom: 5px;
-   
+    padding-bottom: 5px;   
 }
 
 /*Footer*/
 /* Styling for footer */
 
 footer {
-
     font-size: 13px;
     padding-left: 8%;   
-}
-   
-}
-        
-        
-    
+}  

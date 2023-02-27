@@ -24,25 +24,20 @@
    
 <body>
     
-    <div class="container"> <!--This div holds styling elements -width, margin, etc- for the Header and Banner. --> 
-    
+    <div class="container"> <!--This div defines max-width and margin for the Header and Banner. --> 
     <!--Header -->    
-        <div class="header">
              <nav>  
-                <div class="logo">
-                <img src="images/logo.png" alt="Three Star Logo">
-                </div> 
                 <ul>  <!--used list items for navigation. 
-                    Each item has an anchor tag that links to an id, enabling navigation to jump to the id element-->
+                      Each item has an anchor tag that links to an id, enabling navigation to jump to the id element-->
+                    <img src="images/logo.png" alt="Three Star Logo">
                     <li class="home"><a href="#banner" >Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>        
-                </ul>
-                    <input type=text placeholder="Search" class="search">
-                    <button> <i class="fa fa-search"></i> </button>
-                    
+                </ul>       
+                <input type=text placeholder="Search" class="search">
+                <button> <i class="fa fa-search"></i> </button> 
             </nav>
         </div> 
 
@@ -58,28 +53,26 @@
             </div>
                 
         </div>
-    </div>
     
    <main>
     
-    <div class="container2"> <!--This div holds styling elements for the main body -->
+    <div class="container2">
      <!--About Us - used external div to add bleed effect and internal div for the rest of the styling-->    
      <!--Different about classes are used to identify flex items. Id attribute is used to jump to About Us from top navigation.-->   
            
-            <div class="about-container" id="about-us"> 
-                    <img src="images/about-us.jpg" alt="Office Recreation Hall" class="about-photo">
-                  
+            <section class="about-container" id="about-us"> 
+                <img src="images/about-us.jpg" alt="Office Recreation Hall" class="about-photo">  
                 <div class="about-us">   
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem rem, quos sit suscipit ducimus est adipisci ullam! Ratione nisi esse sed quibusdam impedit reprehenderit laboriosam tenetur, cupiditate vel, neque modi!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, doloribus! At repellat labore quos accusantium, harum doloribus. Ea, recusandae obcaecati. Corporis soluta impedit fuga quaerat alias quas quidem facere temporibus?</p>
                 </div>
-            </div>  
+            </section>  
          
 
     <!--Our Services - used external and internal div to style Our Services-->   
     <!--Different classes are used to identify grid items. Id attribute is used to jump to Our Services from top navigation.-->     
-            <div class="services-container" id="services">
+            <section class="services-container" id="services">
     
                 <div class="our-services">    
                      <h2>Our Services</h2>
@@ -87,89 +80,61 @@
               
                 <div class="digital">
                     <img src="images/digital.jpg" alt="Man using laptop and mobile phone" class="digital-image">
-                    
-                
                     <h4>Digital Transformation</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>
-                    
-                    <a href="#digital-plans" class="button">Digital Plans <i class="fa fa-caret-right"></i></a>
-                   
-                     
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>                    
+                    <a href="#digital-plans" class="button">Digital Plans <i class="fa fa-caret-right"></i></a>         
                 </div>
 
                 <div class="marketing">
                     <img src="images/marketing.jpg" alt="Laptop with graph on display" class="marketing-image">
-                    
-                    
                     <h4>Marketing</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>
-                  
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>  
                     <a href="#marketing-plans" class="button">Marketing Plans <i class="fa fa-caret-right"></i></a>
-                    
-                   
-
                 </div>
 
                 <div class="video">
-                    <img src="images/video.jpg" alt="Mobile phone with play icon on display" class="video-image">
-                    
-                    
+                    <img src="images/video.jpg" alt="Mobile phone with play icon on display" class="video-image">        
                     <h4>Video Production</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>
-                    
-                    <a href="#video-plans" class="button">Video Plans <i class="fa fa-caret-right"></i></a>
-                    
-                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>                
+                    <a href="#video-plans" class="button">Video Plans <i class="fa fa-caret-right"></i></a>                        
                 </div>
 
                 <div class="web">
-                    <img src="images/web.jpg" alt="Mobile phone with social media login page on display" class="web-image">
-                   
-                    
+                    <img src="images/web.jpg" alt="Mobile phone with social media login page on display" class="web-image">                   
                     <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>
-               
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>               
                     <a href="#web-plans" class="button">Web Plans <i class="fa fa-caret-right"></i></a>
-                   
                 </div>
 
                 <div class="print">
                     <img src="images/print.jpg" alt="Bins with different printer brand logo" class="print-image">
-                    
-                  
                     <h4>Print</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, cum aut ad temporibus voluptatum facilis laboriosam autem, at deleniti expedita repellendus explicabo eveniet, dignissimos mollitia voluptas. Ex explicabo itaque reprehenderit.</p>
-                    
                     <a href="#print-plans" class="button">Print Plans <i class="fa fa-caret-right"></i></a>
-                    
                 </div> 
-            </div>
+            
+            </section>
     
     
     <!--Vision -  used external and internal div to style Vision --> 
-            <div class="vision-container"> 
-              
+            <section class="vision-container"> 
                 <div class="vision">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet. Iste eligendi quaerat consequuntur, maxime veritatis doloribus corrupti, adipisicing elit. Hic eveniet nulla, blanditiis nobis dignissimos facere eligendi, aliquid saepe dolor architecto voluptasodio neque necessitatibus nesciunt nisi natus commodi eveniet, totam earum aspernatur. Doloremque, vitae tempora.</p>  
                     <a href="#learn-more">Learn More <i class="fa fa-caret-right"></i></a>   
                 </div>
-          
-            </div>
+            </section>
     
     <!--Our Team - used external and internal div to style Our Team -->   
     <!--Different classes are used to identify flex items. Id attribute is used to jump to Our Team from top navigation.-->
-            <div class="team-container" id="team"> 
+            <section class="team-container" id="team"> 
                 
                 <div class="our-team"> 
                     <h2>Our Team</h2> 
                 </div>    
                 
                 <div class = "john"> 
-                  
-                        <img src="images/john.jpg" alt="John Doe" class="john-image">
-                   
-                
+                    <img src="images/john.jpg" alt="John Doe" class="john-image">
                     <div class="john-text">
                         <h3>John Doe</h3>
                         <h5>CEO and Co-owner</h5>
@@ -179,10 +144,7 @@
                 </div>
                 
                 <div class = "bob">
-                    
-                        <img src="images/bob.jpg" alt="Bob Rite" class="bob-image">
-                    
-
+                    <img src="images/bob.jpg" alt="Bob Rite" class="bob-image">    
                     <div class="bob-text">
                         <h3>Bob Rite</h3>
                         <h5>CFO and Co-owner</h5>
@@ -191,12 +153,12 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
 
     <!--Contact Us - used external and internal div to style Contact Us-->
     <!--Different classes are used to identify  grid items. Id attribute is used to jump to Contact Us from top navigation.-->
             
-            <div class="contact-container" id="contact"> 
+            <section class="contact-container" id="contact"> 
                 
                 <div class="contact-us">
                      <h2>Contact Us</h2>
@@ -204,7 +166,6 @@
 
                 <div class="message">
                     <h3>Send us a Message</h3>
-                        
                     <form action="Thanks.html" method="POST"><br> <!--used form element to create a form for user input-->
                         <label for="full-name" class="label">Full Name:</label> 
                         <input type="text" id="full-name" name="full-name;">
@@ -244,7 +205,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548449421!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231253704!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             
-            </div>     
+            </section>     
         </div>
     </main> 
     
